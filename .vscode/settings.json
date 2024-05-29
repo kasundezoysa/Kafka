@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "slf4j-api-2.0.9.jar",
+        "kafka-clients-3.7.0.jar"
+    ]
+}
