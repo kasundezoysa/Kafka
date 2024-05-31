@@ -23,7 +23,7 @@ public class KafkaP{
         KafkaProducer<String, String> producer = new KafkaProducer<>(props);
 
         try{
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < 2; i++) {
                 String key=Integer.toString(i);
                 String message = "Message " + i;
                 ProducerRecord r=new ProducerRecord<>("topic1",message);
