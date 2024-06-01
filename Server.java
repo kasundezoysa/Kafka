@@ -39,6 +39,8 @@ class ClientHandler extends Thread {
             while ((message = input.readLine()) != null) {
                 System.out.println("Received: " + message);
             }
+            socket.getOutputStream().write("Hello".getBytes());
+        
         } catch (IOException e) {
             System.out.println("Client handler exception: " + e.getMessage());
             e.printStackTrace();

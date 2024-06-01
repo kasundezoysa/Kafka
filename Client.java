@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Client {
 
     public static void main(String[] args) {
-        String hostname = "localhost"; // The server's hostname or IP address
-        int port = 12345; // The server's port number
+        String hostname = "192.248.22.133"; // The server's hostname or IP address
+        int port = 9092; // The server's port number
 
         try (Socket socket = new Socket(hostname, port)) {
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
