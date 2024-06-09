@@ -8,7 +8,7 @@ import java.util.concurrent.Future;
 
 public class KafkaP{
     public static void main(String[] args) throws Exception{
-        String topicName="topic1";
+        String topicName="topic5";
        
         Properties props = new Properties();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "kfk.ucsc.cmb.ac.lk:9092");
@@ -19,7 +19,7 @@ public class KafkaP{
 
         for (int i = 0; i < 2; i++) {
             String key=Integer.toString(i);
-            String message = "Message#";
+            String message = "Message *";
 
             ProducerRecord<String,String> r=new ProducerRecord<>(topicName,key,message);
             Future <RecordMetadata> future = producer.send(r);
